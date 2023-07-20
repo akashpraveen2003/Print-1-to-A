@@ -20,14 +20,14 @@ import java.util.Scanner;
  */
 public class Print_1_to_N {
 	
-	private static void print(int i,int n) {
-		// TODO Auto-generated method stub
-		if(i>n)
+	private static void print(int i) {
+		if(n==1)
 		{
+			System.out.print(n+" ");
 			return ;
 		}
-		System.out.print(i+" ");
-		print(i+1,n);
+		print(n-1);
+		System.out.print(n+" ");
 		
 	}
 
@@ -35,6 +35,6 @@ public class Print_1_to_N {
 		// TODO Auto-generated method stub
 		Scanner scanner=new Scanner(System.in);
 		int n=scanner.nextInt();
-		print(1,n);
+		print(n);
 	}
 }
